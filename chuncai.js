@@ -6,7 +6,7 @@
             canDrag = true;
             sPos = mousePos(e);
         });
-        $(document).mouseup(function (e) {
+        $(document).mouseup(function () {
             canDrag = false;
         }).mousemove(function (e) {
             if (!canDrag) return;
@@ -35,7 +35,7 @@ $.fn.will = function (callback, type) {
         next();
     });
 };
-(function ($, document) {
+(function ($) {
     if (!$.drag) return;
 
     $.chuncai = function (option) {
@@ -225,4 +225,4 @@ $.fn.will = function (callback, type) {
             }, 500);
         }
     };
-})(jQuery, document);
+})(jQuery);
