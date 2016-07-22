@@ -1,0 +1,24 @@
+{
+  "name": "chuncai",
+  "version": "1.0.0",
+  "description": "A lovely Page Wizard, is responsible for selling meng.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalldie/chuncai.git"
+  },
+  "author": "shalldie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shalldie/chuncai/issues"
+  },
+  "homepage": "https://github.com/shalldie/chuncai#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5"
+  }
+}
