@@ -1,4 +1,4 @@
-; (function ($, document) {
+;(function ($, document) {
     var Drag = function ($ele, $wrap, callback) {
         if (!$wrap) $wrap = $ele;
         var canDrag, sPos;
