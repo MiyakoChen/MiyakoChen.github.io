@@ -3,6 +3,43 @@
 
 <body>
     <h1>我的个人主页</h1>
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            鼠标悬停几秒钟查看此处动态绑定的提示信息！
+        </span>
+    </div>
+    <div id="app-4">
+        <li v-for="todo in todos">
+            {{ todo.text+'TODO' }}
+        </li>
+    </div>
 </body>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            message: 'the first vue'
+        }
+    })
+    let app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: '现在时间:' + new Date().toLocaleString()
+        }
+    })
+    let app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: '第一步' },
+                { text: '第二步' },
+                { text: '最后' }
+            ]
+        }
+    })
+</script>
 
 </html>
