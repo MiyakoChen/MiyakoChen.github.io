@@ -28,6 +28,6 @@ requestAnimationFrame(() => {
     })
     let timeTitle = document.getElementById('app-2');
     timeTitle.onmousemove = () => {
-        app2.data = '现在时间:' + new Date().toLocaleString();
+        app2.message = '现在时间:' + new Date().toLocaleString();
     };
 })
