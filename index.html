@@ -1,23 +1,14 @@
 <html>
 <script src='vue.min.js'></script>
+<script src="./static-file/script.js"></script>
 <link type="text/css" rel="stylesheet" href="./static-file/script.css">
 
 <body>
-    <h1>我的个人主页</h1>
-    <div id="app">
-        {{ message }}
+    <div id='header'>
+            <div id='header'></div>
     </div>
-    <div id="app-2">
-        <span v-bind:title="message">
-            鼠标悬停几秒钟查看此处动态绑定的提示信息！
-        </span>
-    </div>
-    <div id="app-4">
-        <li v-for="todo in todos">
-            {{ todo.text+'TODO' }}
-        </li>
-    </div>
+    <div id='body'></div>
+    <div id='foot'></div>
 </body>
-<script src="./static-file/script.js"></script>
 
 </html>
