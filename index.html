@@ -1,6 +1,5 @@
 <html>
 <script src='vue.min.js'></script>
-<script src="script.js"></script>
 
 <body>
     <h1>我的个人主页</h1>
@@ -18,35 +17,5 @@
         </li>
     </div>
 </body>
-<script>
-    debugger;
-    let app = new Vue({
-        el: '#app',
-        data: {
-            message: 'the first vue'
-        }
-    })
-    let app2 = new Vue({
-        el: '#app-2',
-        data: {
-            message: '现在时间:' + new Date().toLocaleString()
-        }
-    })
-    let app4 = new Vue({
-        el: '#app-4',
-        data: {
-            todos: [{
-                    text: '第一步'
-                },
-                {
-                    text: '第二步'
-                },
-                {
-                    text: '最后'
-                }
-            ]
-        }
-    })
-</script>
-
+<script src="script.js"></script>
 </html>
