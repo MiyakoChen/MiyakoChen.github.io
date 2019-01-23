@@ -1,10 +1,11 @@
-import _ from 'lodash';
 function component() {
-    var element = document.createElement('div');
+	var element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+	let testStr = 'aa';
 
-    return element;
+	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+	return element;
 }
 
 document.body.appendChild(component());

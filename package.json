@@ -8,13 +8,14 @@
     "webpack-cli": "^3.2.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.120",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
     "webpack": "^4.29.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
